@@ -1,0 +1,415 @@
+{
+  "processes": [
+    {
+      "id": "PO1", "domain": "PO", "name": "Definir un Plan Estratégico de TI",
+      "importance": "alta",
+      "keywords": ["PETI", "plan estratégico", "alineación", "objetivos TI", "presupuesto TI", "planificación estratégica"],
+      "required_evidence": {
+        "normativo": ["plan estratégico de TI", "PETI"],
+        "operativo": ["revisión anual", "acta de aprobación"],
+        "estrategico": ["objetivos estratégicos", "metas TI"]
+      },
+      "auto_gaps": [
+        {"id": "PO1-G1", "condition": "no_keywords", "description": "No se encontró Plan Estratégico de TI (PETI) en los documentos revisados", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "PO2", "domain": "PO", "name": "Definir la Arquitectura de Información",
+      "importance": "media",
+      "keywords": ["arquitectura", "datos", "diccionario", "modelo de datos", "clasificación información", "flujo de datos"],
+      "required_evidence": {
+        "normativo": ["política de gestión de datos", "arquitectura de información"],
+        "operativo": ["inventario de datos", "diccionario de datos"]
+      },
+      "auto_gaps": [
+        {"id": "PO2-G1", "condition": "no_keywords", "description": "No se encontró documentación de arquitectura de información", "severity": "media"}
+      ]
+    },
+    {
+      "id": "PO3", "domain": "PO", "name": "Determinar la Dirección Tecnológica",
+      "importance": "media",
+      "keywords": ["plan tecnológico", "infraestructura", "tecnología emergente", "estándares tecnológicos", "hoja de ruta"],
+      "required_evidence": {
+        "normativo": ["plan tecnológico", "estándares de infraestructura"],
+        "estrategico": ["hoja de ruta tecnológica"]
+      },
+      "auto_gaps": [
+        {"id": "PO3-G1", "condition": "no_keywords", "description": "No se identificó plan o dirección tecnológica documentada", "severity": "media"}
+      ]
+    },
+    {
+      "id": "PO4", "domain": "PO", "name": "Definir Procesos, Organización y Relaciones de TI",
+      "importance": "alta",
+      "keywords": ["organigrama", "funciones TI", "roles", "responsabilidades", "comité TI", "gobierno TI"],
+      "required_evidence": {
+        "normativo": ["organigrama TI", "manual de funciones", "comité de TI"]
+      },
+      "auto_gaps": [
+        {"id": "PO4-G1", "condition": "no_keywords", "description": "No se encontró definición formal de roles y responsabilidades de TI", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "PO5", "domain": "PO", "name": "Administrar la Inversión en TI",
+      "importance": "media",
+      "keywords": ["presupuesto TI", "inversión tecnológica", "costo TI", "ROI", "gestión financiera TI"],
+      "required_evidence": {
+        "normativo": ["política de inversión TI"],
+        "operativo": ["presupuesto anual TI", "control de costos"]
+      },
+      "auto_gaps": [
+        {"id": "PO5-G1", "condition": "no_keywords", "description": "No se encontró gestión formal del presupuesto e inversión en TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "PO6", "domain": "PO", "name": "Comunicar las Aspiraciones y la Dirección de la Gerencia",
+      "importance": "baja",
+      "keywords": ["política TI", "comunicación TI", "directrices", "valores", "cultura TI"],
+      "required_evidence": {
+        "normativo": ["política general de TI", "código de conducta TI"]
+      },
+      "auto_gaps": [
+        {"id": "PO6-G1", "condition": "no_keywords", "description": "No se encontraron políticas generales de TI comunicadas formalmente", "severity": "baja"}
+      ]
+    },
+    {
+      "id": "PO7", "domain": "PO", "name": "Administrar Recursos Humanos de TI",
+      "importance": "media",
+      "keywords": ["personal TI", "capacitación", "formación", "RRHH tecnología", "competencias TI", "contratación"],
+      "required_evidence": {
+        "normativo": ["política de RRHH TI", "plan de capacitación"],
+        "operativo": ["registros de capacitación", "evaluaciones de desempeño"]
+      },
+      "auto_gaps": [
+        {"id": "PO7-G1", "condition": "no_keywords", "description": "No se encontró gestión formal de recursos humanos de TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "PO8", "domain": "PO", "name": "Administrar la Calidad",
+      "importance": "media",
+      "keywords": ["calidad", "ISO", "mejora continua", "métricas calidad", "estándares calidad", "SLA"],
+      "required_evidence": {
+        "normativo": ["sistema de gestión de calidad", "política de calidad TI"],
+        "operativo": ["auditorías de calidad", "indicadores de calidad"]
+      },
+      "auto_gaps": [
+        {"id": "PO8-G1", "condition": "no_keywords", "description": "No se encontró sistema de gestión de calidad en TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "PO9", "domain": "PO", "name": "Evaluar y Administrar los Riesgos de TI",
+      "importance": "alta",
+      "keywords": ["gestión de riesgos", "registro de riesgos", "metodología riesgos", "riesgo TI", "evaluación riesgos", "mapa de riesgos"],
+      "required_evidence": {
+        "normativo": ["metodología de gestión de riesgos", "política de riesgos TI"],
+        "operativo": ["registro/inventario de riesgos", "plan de tratamiento de riesgos"]
+      },
+      "auto_gaps": [
+        {"id": "PO9-G1", "condition": "no_keywords", "description": "No se encontró metodología formal de gestión de riesgos de TI", "severity": "alta"},
+        {"id": "PO9-G2", "condition": "partial_no_operational", "description": "Existe mención de riesgos pero sin evidencia operativa de gestión sistemática", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "PO10", "domain": "PO", "name": "Administrar Proyectos",
+      "importance": "media",
+      "keywords": ["gestión de proyectos", "PMO", "metodología proyectos", "cronograma", "PMBOK", "portafolio proyectos"],
+      "required_evidence": {
+        "normativo": ["metodología de proyectos TI"],
+        "operativo": ["actas de proyecto", "cronogramas", "informes de avance"]
+      },
+      "auto_gaps": [
+        {"id": "PO10-G1", "condition": "no_keywords", "description": "No se encontró metodología formal de gestión de proyectos TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "AI1", "domain": "AI", "name": "Identificar Soluciones Automatizadas",
+      "importance": "baja",
+      "keywords": ["análisis de requerimientos", "solución tecnológica", "factibilidad", "alternativas"],
+      "required_evidence": {
+        "normativo": ["proceso de evaluación de soluciones TI"],
+        "operativo": ["estudios de factibilidad"]
+      },
+      "auto_gaps": [
+        {"id": "AI1-G1", "condition": "no_keywords", "description": "No se encontró proceso para identificar y evaluar soluciones automatizadas", "severity": "baja"}
+      ]
+    },
+    {
+      "id": "AI2", "domain": "AI", "name": "Adquirir y Mantener Software Aplicativo",
+      "importance": "media",
+      "keywords": ["desarrollo software", "mantenimiento aplicaciones", "ciclo de vida software", "pruebas", "código fuente"],
+      "required_evidence": {
+        "normativo": ["política de desarrollo de software", "ciclo de vida de aplicaciones"],
+        "operativo": ["registros de cambios", "pruebas de software"]
+      },
+      "auto_gaps": [
+        {"id": "AI2-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de desarrollo y mantenimiento de software", "severity": "media"}
+      ]
+    },
+    {
+      "id": "AI3", "domain": "AI", "name": "Adquirir y Mantener Infraestructura Tecnológica",
+      "importance": "media",
+      "keywords": ["infraestructura TI", "servidores", "inventario hardware", "mantenimiento hardware", "licencias"],
+      "required_evidence": {
+        "normativo": ["política de gestión de infraestructura"],
+        "operativo": ["inventario de activos TI", "registros de mantenimiento"]
+      },
+      "auto_gaps": [
+        {"id": "AI3-G1", "condition": "no_keywords", "description": "No se encontró gestión formal de infraestructura tecnológica", "severity": "media"}
+      ]
+    },
+    {
+      "id": "AI4", "domain": "AI", "name": "Facilitar la Operación y el Uso",
+      "importance": "baja",
+      "keywords": ["manual de usuario", "capacitación usuarios", "documentación sistema", "transferencia conocimiento"],
+      "required_evidence": {
+        "normativo": ["manuales de usuario"],
+        "operativo": ["registros de capacitación a usuarios"]
+      },
+      "auto_gaps": [
+        {"id": "AI4-G1", "condition": "no_keywords", "description": "No se encontró documentación para facilitar el uso de sistemas TI", "severity": "baja"}
+      ]
+    },
+    {
+      "id": "AI5", "domain": "AI", "name": "Adquirir Recursos de TI",
+      "importance": "media",
+      "keywords": ["adquisición TI", "licitación", "proveedores TI", "contratación tecnología", "compras TI"],
+      "required_evidence": {
+        "normativo": ["política de adquisición de TI"],
+        "operativo": ["contratos con proveedores TI"]
+      },
+      "auto_gaps": [
+        {"id": "AI5-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de adquisición de recursos TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "AI6", "domain": "AI", "name": "Administrar Cambios",
+      "importance": "alta",
+      "keywords": ["gestión de cambios", "control de cambios", "RFC", "cambio autorizado", "CMDB", "change management"],
+      "required_evidence": {
+        "normativo": ["política de gestión de cambios", "procedimiento de cambios"],
+        "operativo": ["registro de cambios", "solicitudes de cambio aprobadas"]
+      },
+      "auto_gaps": [
+        {"id": "AI6-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de gestión de cambios en TI", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "AI7", "domain": "AI", "name": "Instalar y Acreditar Soluciones y Cambios",
+      "importance": "media",
+      "keywords": ["pruebas de aceptación", "UAT", "pase a producción", "acreditación", "control de versiones"],
+      "required_evidence": {
+        "normativo": ["proceso de paso a producción"],
+        "operativo": ["actas de aceptación", "registro de versiones"]
+      },
+      "auto_gaps": [
+        {"id": "AI7-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de acreditación antes del paso a producción", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS1", "domain": "DS", "name": "Definir y Administrar los Niveles de Servicio",
+      "importance": "media",
+      "keywords": ["SLA", "nivel de servicio", "acuerdo de servicio", "disponibilidad", "tiempo de respuesta servicio"],
+      "required_evidence": {
+        "normativo": ["catálogo de servicios TI", "SLA definidos"],
+        "operativo": ["informes de cumplimiento de SLA"]
+      },
+      "auto_gaps": [
+        {"id": "DS1-G1", "condition": "no_keywords", "description": "No se encontraron SLA definidos o catálogo de servicios TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS2", "domain": "DS", "name": "Administrar los Servicios de Terceros",
+      "importance": "media",
+      "keywords": ["proveedor", "terceros", "outsourcing", "contrato servicio", "gestión proveedores"],
+      "required_evidence": {
+        "normativo": ["política de gestión de proveedores"],
+        "operativo": ["contratos de servicio vigentes", "evaluaciones de proveedores"]
+      },
+      "auto_gaps": [
+        {"id": "DS2-G1", "condition": "no_keywords", "description": "No se encontró gestión formal de servicios de terceros/proveedores", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS3", "domain": "DS", "name": "Administrar el Desempeño y la Capacidad",
+      "importance": "media",
+      "keywords": ["capacidad", "rendimiento", "performance", "monitoreo sistemas", "planificación capacidad"],
+      "required_evidence": {
+        "normativo": ["política de gestión de capacidad"],
+        "operativo": ["informes de rendimiento", "registros de monitoreo"]
+      },
+      "auto_gaps": [
+        {"id": "DS3-G1", "condition": "no_keywords", "description": "No se encontró gestión formal del desempeño y capacidad de sistemas", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS4", "domain": "DS", "name": "Garantizar la Continuidad del Servicio",
+      "importance": "alta",
+      "keywords": ["continuidad", "BCP", "DRP", "recuperación desastre", "plan de contingencia", "alta disponibilidad"],
+      "required_evidence": {
+        "normativo": ["BCP", "DRP", "plan de continuidad de negocio"],
+        "operativo": ["pruebas de continuidad", "ejercicios BCP"]
+      },
+      "auto_gaps": [
+        {"id": "DS4-G1", "condition": "no_keywords", "description": "No se encontró Plan de Continuidad de Negocio (BCP) o Plan de Recuperación ante Desastres (DRP)", "severity": "critica"},
+        {"id": "DS4-G2", "condition": "plan_no_test", "description": "Existe BCP/DRP pero sin evidencia de pruebas periódicas", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "DS5", "domain": "DS", "name": "Garantizar la Seguridad de los Sistemas",
+      "importance": "alta",
+      "keywords": ["seguridad", "acceso", "contraseña", "firewall", "antivirus", "incidente seguridad", "vulnerabilidad", "cifrado", "ciberseguridad"],
+      "required_evidence": {
+        "normativo": ["política de seguridad de la información", "procedimiento de gestión de accesos"],
+        "operativo": ["registro de incidentes de seguridad", "log de accesos", "análisis de vulnerabilidades"]
+      },
+      "auto_gaps": [
+        {"id": "DS5-G1", "condition": "policy_without_operational", "description": "Existe política de seguridad pero sin evidencia operativa de gestión de incidentes", "severity": "alta"},
+        {"id": "DS5-G2", "condition": "no_incident_management", "description": "No se encontró proceso formal de gestión de incidentes de seguridad", "severity": "critica"}
+      ]
+    },
+    {
+      "id": "DS6", "domain": "DS", "name": "Identificar y Asignar Costos",
+      "importance": "baja",
+      "keywords": ["costo TI", "asignación costos", "chargeback", "centro de costos", "presupuesto operativo"],
+      "required_evidence": {
+        "normativo": ["modelo de asignación de costos TI"],
+        "operativo": ["reportes de costos TI por área"]
+      },
+      "auto_gaps": [
+        {"id": "DS6-G1", "condition": "no_keywords", "description": "No se encontró modelo formal de identificación y asignación de costos TI", "severity": "baja"}
+      ]
+    },
+    {
+      "id": "DS7", "domain": "DS", "name": "Educar y Entrenar a los Usuarios",
+      "importance": "media",
+      "keywords": ["capacitación", "entrenamiento usuarios", "formación", "concientización", "awareness"],
+      "required_evidence": {
+        "normativo": ["plan de capacitación en TI"],
+        "operativo": ["registros de capacitación", "evaluaciones de aprendizaje"]
+      },
+      "auto_gaps": [
+        {"id": "DS7-G1", "condition": "no_keywords", "description": "No se encontró programa formal de capacitación y entrenamiento a usuarios", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS8", "domain": "DS", "name": "Administrar la Mesa de Servicio y los Incidentes",
+      "importance": "alta",
+      "keywords": ["mesa de ayuda", "help desk", "service desk", "incidente", "ticket", "ITIL", "soporte TI"],
+      "required_evidence": {
+        "normativo": ["proceso de gestión de incidentes", "SLA de mesa de servicio"],
+        "operativo": ["registro de tickets/incidentes", "estadísticas de mesa de servicio"]
+      },
+      "auto_gaps": [
+        {"id": "DS8-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de mesa de servicio o gestión de incidentes", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "DS9", "domain": "DS", "name": "Administrar la Configuración",
+      "importance": "media",
+      "keywords": ["CMDB", "configuración", "inventario activos", "gestión configuración", "baseline"],
+      "required_evidence": {
+        "normativo": ["proceso de gestión de configuración"],
+        "operativo": ["CMDB actualizada", "inventario de configuraciones"]
+      },
+      "auto_gaps": [
+        {"id": "DS9-G1", "condition": "no_keywords", "description": "No se encontró gestión formal de configuración de activos TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS10", "domain": "DS", "name": "Administrar los Problemas",
+      "importance": "media",
+      "keywords": ["gestión problemas", "problema recurrente", "análisis causa raíz", "RCA", "conocimiento errores"],
+      "required_evidence": {
+        "normativo": ["proceso de gestión de problemas"],
+        "operativo": ["registro de problemas", "análisis de causa raíz"]
+      },
+      "auto_gaps": [
+        {"id": "DS10-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de gestión de problemas TI", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS11", "domain": "DS", "name": "Administrar los Datos",
+      "importance": "alta",
+      "keywords": ["backup", "respaldo", "restauración", "recuperación datos", "copia seguridad", "integridad datos"],
+      "required_evidence": {
+        "normativo": ["política de backup", "procedimiento de respaldo y recuperación"],
+        "operativo": ["registros de backup", "pruebas de restauración"]
+      },
+      "auto_gaps": [
+        {"id": "DS11-G1", "condition": "no_keywords", "description": "No se encontró política o procedimiento de backup y gestión de datos", "severity": "critica"},
+        {"id": "DS11-G2", "condition": "backup_no_test", "description": "Se menciona backup pero no existe evidencia de pruebas de restauración", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "DS12", "domain": "DS", "name": "Administrar el Ambiente Físico",
+      "importance": "media",
+      "keywords": ["data center", "centro de datos", "seguridad física", "control ambiental", "UPS", "aire acondicionado CPD"],
+      "required_evidence": {
+        "normativo": ["política de seguridad física del CPD"],
+        "operativo": ["registro de accesos físicos", "mantenimiento infraestructura física"]
+      },
+      "auto_gaps": [
+        {"id": "DS12-G1", "condition": "no_keywords", "description": "No se encontró gestión del ambiente físico del centro de datos", "severity": "media"}
+      ]
+    },
+    {
+      "id": "DS13", "domain": "DS", "name": "Administrar las Operaciones",
+      "importance": "media",
+      "keywords": ["operaciones TI", "procedimientos operativos", "runbook", "monitoreo operacional", "batch"],
+      "required_evidence": {
+        "normativo": ["procedimientos operativos estándar"],
+        "operativo": ["registros de operaciones", "bitácoras operativas"]
+      },
+      "auto_gaps": [
+        {"id": "DS13-G1", "condition": "no_keywords", "description": "No se encontraron procedimientos operativos estándar documentados", "severity": "media"}
+      ]
+    },
+    {
+      "id": "ME1", "domain": "ME", "name": "Monitorear y Evaluar el Desempeño de TI",
+      "importance": "alta",
+      "keywords": ["KPI", "indicadores", "métricas TI", "balanced scorecard", "cuadro de mando", "dashboard TI"],
+      "required_evidence": {
+        "normativo": ["framework de indicadores de TI"],
+        "operativo": ["reportes de desempeño TI", "informes de KPIs"]
+      },
+      "auto_gaps": [
+        {"id": "ME1-G1", "condition": "no_keywords", "description": "No se encontró sistema formal de indicadores y monitoreo del desempeño de TI", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "ME2", "domain": "ME", "name": "Monitorear y Evaluar el Control Interno",
+      "importance": "alta",
+      "keywords": ["control interno", "auditoría interna TI", "evaluación controles", "COSO", "SOX"],
+      "required_evidence": {
+        "normativo": ["marco de control interno TI"],
+        "operativo": ["informes de auditoría interna TI", "evaluaciones de controles"]
+      },
+      "auto_gaps": [
+        {"id": "ME2-G1", "condition": "no_keywords", "description": "No se encontró proceso formal de monitoreo y evaluación del control interno de TI", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "ME3", "domain": "ME", "name": "Garantizar el Cumplimiento Regulatorio",
+      "importance": "alta",
+      "keywords": ["cumplimiento", "regulatorio", "normativa", "GDPR", "ley datos", "SBS", "compliance", "regulación"],
+      "required_evidence": {
+        "normativo": ["mapa de cumplimiento regulatorio"],
+        "operativo": ["informes de cumplimiento", "evidencias de cumplimiento normativo"]
+      },
+      "auto_gaps": [
+        {"id": "ME3-G1", "condition": "no_keywords", "description": "No se encontró gestión formal del cumplimiento regulatorio en TI", "severity": "alta"}
+      ]
+    },
+    {
+      "id": "ME4", "domain": "ME", "name": "Proporcionar Gobierno de TI",
+      "importance": "alta",
+      "keywords": ["gobierno TI", "comité directivo TI", "gobernanza", "alineación estratégica", "valor TI"],
+      "required_evidence": {
+        "normativo": ["marco de gobierno de TI"],
+        "operativo": ["actas comité directivo TI", "informes de gobierno TI"]
+      },
+      "auto_gaps": [
+        {"id": "ME4-G1", "condition": "no_keywords", "description": "No se encontró estructura formal de gobierno de TI", "severity": "alta"}
+      ]
+    }
+  ]
+}
