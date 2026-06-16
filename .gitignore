@@ -1,0 +1,38 @@
+# ── Node / Frontend ──────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.local
+
+# ── Python / Backend ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+.eggs/
+build/
+*.so
+
+# ── Base de datos ─────────────────────────────────────────────
+*.db
+*.sqlite3
+
+# ── Variables de entorno ──────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS / Editor ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
